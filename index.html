@@ -20,7 +20,7 @@ a.card .desc{color:var(--muted);font-size:.85rem}
 <div class="links">
 <a class="card" href="mi_attribute_vectors.html"><div class="title">Hidden-state attribute vectors</div><div class="desc">Per-block (L30-L49) steering. Quality is a clean dial; gravity/camera/brightness mostly don't work at any safe magnitude.</div></a>
 <a class="card" href="mi_velocity_attribute_vectors.html"><div class="title">Velocity-space attribute vectors</div><div class="desc">Same method, steering the consolidated noise_pred instead of per-block hidden states (Michael's suggestion). Quality works even better (clean at full magnitude); camera's "motion" signal turns out to be a color-flicker artifact, not real panning.</div></a>
-<a class="card" href="mi_gravity_generalization.html"><div class="title">Gravity: expanding to 20 scenes</div><div class="desc">In progress. Scaled both vectors down to 0.25x after feedback -- removes most of the brightness/blur artifact. No confirmed "falls better" effect yet; 16 more scenes running now.</div></a>
+<a class="card" href="mi_gravity_generalization.html"><div class="title">Gravity: 20-scene generalization check</div><div class="desc">1 confirmed positive (mug-breaks: a never-releases base-H3 failure actually falls under velocity steering), 1 scene where motion got suppressed instead of enhanced (double-cradle), 18 with no confirmed effect.</div></a>
 </div>
 </main>
 </body></html>
