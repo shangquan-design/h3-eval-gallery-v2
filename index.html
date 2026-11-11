@@ -16,10 +16,11 @@ a.card .desc{color:var(--muted);font-size:.85rem}
 <body>
 <main>
 <h1>MiniMax-H3 non-training attribute control</h1>
-<p class="sub">Minimal deploy: only the two pages below, not the full evaluation gallery (see <a href="https://shangquan-design.github.io/h3-eval-gallery/" style="color:var(--accent)">h3-eval-gallery</a> for everything else).</p>
+<p class="sub">Minimal deploy: only the pages below, not the full evaluation gallery (see <a href="https://shangquan-design.github.io/h3-eval-gallery/" style="color:var(--accent)">h3-eval-gallery</a> for everything else).</p>
 <div class="links">
 <a class="card" href="mi_attribute_vectors.html"><div class="title">Hidden-state attribute vectors</div><div class="desc">Per-block (L30-L49) steering. Quality is a clean dial; gravity/camera/brightness mostly don't work at any safe magnitude.</div></a>
 <a class="card" href="mi_velocity_attribute_vectors.html"><div class="title">Velocity-space attribute vectors</div><div class="desc">Same method, steering the consolidated noise_pred instead of per-block hidden states (Michael's suggestion). Quality works even better (clean at full magnitude); camera's "motion" signal turns out to be a color-flicker artifact, not real panning.</div></a>
+<a class="card" href="mi_gravity_generalization.html"><div class="title">Gravity: 5-scene generalization check</div><div class="desc">Applied both saved gravity vectors to 4 more held-out scenes. Same result everywhere -- gravity is a genuine weak point for this method, not a one-scene fluke.</div></a>
 </div>
 </main>
 </body></html>
